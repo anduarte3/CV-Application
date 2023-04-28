@@ -1,16 +1,39 @@
 import React, { Component } from "react";
+import Personal from './components/Personal.js'; // Importing Component
+import Education from "./components/Education.js";
+import WorkExperience from "./components/WorkExperience.js";
 
-//import Overview from "./components/Overview"; 
-
+//PascalCasing
 class App extends Component {
     constructor(props) {
         super(props)
+
+        this.handleSubmitBtn = this.handleSubmitBtn.bind(this);
+        this.handleEditBtn = this.handleEditBtn.bind(this);
+        this.handleChangeBtn = this.handleChangeBtn.bind(this);
     }
 
+    handleSubmitBtn(e) {
+      e.preventDefault();
+      console.log(e.target);
+    }
+
+    handleEditBtn(e) {
+      e.preventDefault();
+      console.log(e.target);
+    }
+    handleChangeBtn(e) {
+      e.preventDefault();
+      console.log(e.target);
+    }
+    
     render() {
+      // JSX: Javascript XML
         return <div>
-            
-        </div>
+          <Personal/>
+          <WorkExperience handleSubmit={this.handleSubmitBtn} handleEdit={this.handleEditBtn}/>
+          <Education handleSubmit={this.handleSubmitBtn} handleEdit={this.handleEditBtn}/>
+          </div>
     }
 }
 
@@ -18,31 +41,6 @@ export default App;
 
 
 //CV APP consists of:
-
-//Personal Details 
-
-//name 
-// role
-// number*
-// mail*
-// city*
-// intro
-
-//Work experience
-
-//job location
-//job role
-//date join
-//date end (or present)
-
-//Education
-
-
-//School
-//degree curso tecnologico
-//subject formacao tecnica em eletroncia e computadores
-//Date join
-//Date end
 
 
 //Things to consider
