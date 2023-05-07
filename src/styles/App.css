@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    padding: 50px;
+}
+.cv-container {
+    background-color: darkslateblue;
+    height: 100%;
+    height: 100vh;
+    width: 70vh;
+    margin-left: 700px;
+    border-radius: 20px;
+    border-style: 50px;
+    padding: 50px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.cv-header {
+    display: flex;
+    flex-direction: column;
+}
+.work-section {
+    display: flex;
+    flex-direction: column;
+}
+.work-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+.work-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding: 10px;
+}
+.cv-footer {
+    margin-top: 300px;
+    text-align: center;
+}
+textarea {
+    resize: none;
+}
+.text-field {
+    font-size: 18px;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.job-field {
+    font-size: 20px;
+    margin-left: 50px;
+}
+.job-location-field {
+    font-size: 17px;
+    margin-left: 50px;
+}
+input {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: black;
+    border: none;
+    
+    background-color: transparent;
+}
+input[name='name'] {
+    font-size: 30px;
+}
+input:focus {
+    height: 20px;
+    border: none;
+}
+input:hover {
+    opacity: 0.2;
+}
+button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+    height: 40px;
+    width: 70px;
+}
+button:hover {
+    opacity: 0.6;
+}
+.option {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.add-button {
+    margin-left: 5px;
+}
+.save-button {
+    margin-right: 5px;
+}
+.delete-button {
+    background-color: darkslateblue;
+    text-align: right;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+.submit-button {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+}
